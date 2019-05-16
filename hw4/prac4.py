@@ -1,7 +1,7 @@
 import numpy as np, os, random, shutil
 import matplotlib.pyplot as plt
 from sklearn.datasets.samples_generator import make_blobs
-np.seterr(divide='ignore',invalid='ignore')
+np.seterr(divide='ignore', invalid='ignore')
 
 seed  = 1
 np.random.seed(seed); random.seed(seed)
@@ -16,7 +16,7 @@ def main():
     # plt.show()
 
     fpath = '/Users/rex/COMP_py/heightWeight.csv'
-    data = np.genfromtxt(fpath, delimiter = ',')
+    data = np.genfromtxt(fpath, delimiter=',')
     X = data[:, 1:]
     y = data [:,0]
     _ = data[:,0]
